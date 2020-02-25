@@ -1,4 +1,4 @@
-# evolve
+# evolve_glacier
 
 This repository contains a development version of a FEM model for the evolution of the free surface of  a glacier due to ice flow and mass balance rate fully accounting for the constraint of **S >= B**. (**S** free surface elevation and **B** bed elevation)
 
@@ -14,7 +14,7 @@ To run the model, the simplest way is to run a singularity container that includ
 ## Requirements
 * [singularity v2.6](https://www.sylabs.io/guides/2.6/user-guide/installation.html)
 
-A singularity container with FEniCS v2016.2 and gmsh can be found at: 
+A singularity container with FEniCS v2016.2 and gmsh can be found as an asset with the first release of this code. 
 
 To run the model execute the following line in a shell:
 ```shell
