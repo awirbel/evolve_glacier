@@ -6,7 +6,7 @@ The model consists of different modules that automatizes ice flow and free surfa
 
 Ice flow computations are performed with the FEM ice flow model [icetools](https://github.com/alexjarosch/icetools).
 
-A manuscript describing the underlying phyics, numerical details and glaciological relevance has been submitted to GMD (Geoscientific Model Development). 
+A manuscript describing the underlying phyics, numerical details and glaciological relevance is submitted to GMD (Geoscientific Model Development). 
 
 
 To run the model, the simplest way is to run a singularity container that includes a working installation of FEniCS v2016.2 and * [Gmsh](http://gmsh.info/).
