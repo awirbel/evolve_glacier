@@ -15,7 +15,8 @@ awk "BEGIN {printf \"Iceflow runtime [seconds]: %.5f\n\", $res2-$res1}"
 
 # Compute free surface evolution
 res1=$(date +%s.%N)
-python moving_surface.py
+python moving_surface_ini.py
+python moving_surface_RK2.py
 res2=$(date +%s.%N)
 awk "BEGIN {printf \"MovingSurface runtime [seconds]: %.5f\n\", $res2-$res1}"
 
@@ -45,7 +46,7 @@ do
 
     # Compute free surface evolution
     res1=$(date +%s.%N)
-    python moving_surface.py
+    python moving_surface_RK2.py
     res2=$(date +%s.%N)
     awk "BEGIN {printf \"MovingSurface runtime [seconds]: %.5f\n\", $res2-$res1}"
 
