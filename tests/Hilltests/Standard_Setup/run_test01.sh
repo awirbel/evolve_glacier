@@ -9,7 +9,7 @@ python read_mesh.py
 
 # Compute 3D velocity field for given mesh
 res1=$(date +%s.%N)
-# mpirun -np 4 python ice_dynamics3D.py
+mpirun -np 4 python ice_dynamics3D.py
 res2=$(date +%s.%N)
 awk "BEGIN {printf \"Iceflow runtime [seconds]: %.5f\n\", $res2-$res1}"
 
