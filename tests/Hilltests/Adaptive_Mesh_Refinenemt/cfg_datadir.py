@@ -22,7 +22,7 @@
 import numpy as np
 
 # general parameters
-data_dir = '/data3/stabitests/case_1/hilltest_amr/data/'
+data_dir = '/workingdirectory/data/'
 # Courant number
 cmaxF = 0.1
 # year in seconds, seconds in year
