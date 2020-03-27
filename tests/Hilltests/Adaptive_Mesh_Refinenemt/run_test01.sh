@@ -46,7 +46,7 @@ do
 
     # Compute 3D velocity field
     res1=$(date +%s.%N)
-    #mpirun -np 4 python ice_dynamics3D.py
+    mpirun -np 4 python ice_dynamics3D.py
     rm $name_dir$"surface_shell_domain.stl"
     rm $name_dir$"surface_2D_"$i2$".geo"
     k=$(expr $i + 1)
