@@ -1,12 +1,12 @@
 ## Hilltests
 
-This folder contains the files to run the hilltest for configuration ii. 
+This folder contains the files to run the hilltest for configuration i (initially ice-free hill). 
 
 The standard setup is a Crank-Nicholson time discretization and SUPG stabilisation in space. 
-However, if you want to test the other spatial stabilisation schemes (CIP, BR, SOLD, DG) checkout the different moving_surface_Stabilisationabbreviation.py files.
+However, if you want to test the other spatial stabilisation schemes (CIP, BR, SOLD, DG - more info in the manuscript) checkout the different moving_surface_Stabilisationabbreviation.py files.
 Here, the msh file is directly updated when a new 3D mesh is generated.
 In this example code, the mesh has 4 vertical layers and by using the msh approach, this number is fixed. 
-Find all this in the folder: Standard_Setup
+Find all this in the folder: Standard_Setup and the required input data is provided in the subfolder data.
 
 If you want to use adaptive mesh refinement, test the version in folder: Adaptive_Mesh_Refinement.
 Here, a new stl file is created with different spatial resolution according to the refinement algorithm. 
