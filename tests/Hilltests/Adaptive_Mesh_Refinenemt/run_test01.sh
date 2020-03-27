@@ -4,7 +4,7 @@ set -e
 # Define data directory
 name="glacier_"
 name2=".xml"
-name_dir="/data3/stabitests/case_1/hilltest_amr/data/"
+name_dir="/workingdirectory/data/"
 
 res3=$(date +%s.%N)
 
