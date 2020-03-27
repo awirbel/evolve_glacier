@@ -288,7 +288,7 @@ while flag_stop < 0.5:
     write_surface(u, s_new_bed_ini)
     # Create new 3D mesh
     # print "RK step 1: make new mesh"
-    os.system('gmsh-alex -3 %s/vol_mesh_domain.geo' % (data_dir))
+    os.system('gmsh-aj -3 %s/vol_mesh_domain.geo' % (data_dir))
     os.system('dolfin-convert %s/vol_mesh_domain.msh %s/%s_vel.xml' % (data_dir, data_dir, fname))
     # print "RK step 1: mesh created"
     # Create new name
