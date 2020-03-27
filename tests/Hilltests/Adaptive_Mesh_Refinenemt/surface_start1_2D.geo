@@ -3,10 +3,10 @@ cl1 = 20;
 cl2 = 20;
 
 // mesh corners that are based on the geotiff edges
-north = 1400.0;
-south = 600.0;
-west = 600.0;
-east = 1400.0;
+north = 1500.0;
+south = 500.0;
+west = 500.0;
+east = 1500.0;
 
 // here I move one half dx/dy inside the domain to avoid the edges vs the center coordinates
 Point(1) = {west, south, 0, cl1};
