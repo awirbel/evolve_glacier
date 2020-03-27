@@ -33,11 +33,11 @@ do
 
     # Generate updated 3D mesh
     res1=$(date +%s.%N)
-    gmsh-alex -2 -format stl $name_dir$"surface_shell_domain.geo"
+    gmsh-aj -2 -format stl $name_dir$"surface_shell_domain.geo"
     python make_mesh.py
     echo $name_dir$"surface_2D_"$i2$".geo"
-    gmsh-alex -2 $name_dir$"surface_2D_"$i2$".geo"
-    gmsh-alex -3 $name_dir$"vol_mesh_domain.geo"
+    gmsh-aj -2 $name_dir$"surface_2D_"$i2$".geo"
+    gmsh-aj -3 $name_dir$"vol_mesh_domain.geo"
     dolfin-convert $name_dir$"vol_mesh_domain.msh" $name_dir$name$i2$name2
     dolfin-convert $name_dir$"surface_2D_"$i2$".msh" $name_dir$"surface_2D_"$i2$".xml"
     res2=$(date +%s.%N)
