@@ -5,10 +5,10 @@ layno = 1;
 layext = -1000;
 
 // mesh corners that are based on the geotiff edges
-north = 1400.0;
-south = 600.0;
-west = 600.0;
-east = 1400.0;
+north = 1500.0;
+south = 500.0;
+west = 500.0;
+east = 1500.0;
 
 // surface points outer domain
 Point(1) = {west, south, 0, cl1};
