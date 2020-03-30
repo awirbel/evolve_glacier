@@ -16,7 +16,7 @@ The folders Glacier and Hilltest contain the required input data to reproduce th
 
 ## Requirements
 
-We suggest to use the pre-built singularity container [fenics_v2.simg](https://github.com/awirbel/evolve_glacier/releases) that contains an installation of FEniCS v2016.2 and gmsh (vertex coordinates fixed to three decimals). Other versions of FEniCS are currently not supported. 
+We suggest to use the pre-built singularity container [fenics_v2.simg](https://github.com/awirbel/evolve_glacier/releases) that contains an installation of FEniCS v2016.2 and gmsh (vertex coordinates fixed to three decimals). The container is provided in the assets of the first release of the model code. Other versions of FEniCS are currently not supported. 
 
 Requirements to run this singularity container:
 
