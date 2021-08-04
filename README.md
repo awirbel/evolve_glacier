@@ -40,7 +40,7 @@ Requirements to start individual simulations:
 * Save the required input files in the data folder, these are for (i) STL version: initial 3D mesh (glacier_0000.xml), initial 2D mesh (surface_2D.xml), box surface STL file (surface_shell_domain.stl), vol_mesh_domain.geo 
 OR (ii) msh versoin: initial 3D mesh (glacier_0000.xml), initial 2D mesh (surface_2D.xml), box msh file (volmesh_initblock.msh). See folder geometry_files for infos.
 
-* Set the path to your data directory in cfg_datadir.py and run_test01.sh
+* Set the path to your working directory in cfg_datadir.py and run_test01.sh
 
 * Set free-surface evolution time step in cfg.py (line 57: dt_ADV) in seconds as well as corner coordinates of the computational domain (line 58-62: nx1 (east), nx2 (west), ny1 (south), ny2 (north). There are more options, directly check cfg.py and cfg_datadir.py.
 
@@ -55,7 +55,7 @@ In order to run the hill test in Section 7 in the manuscript using the Standard 
 
 * Save all the files from Hilltest/Standard_Setup to your working directory (this already contains a folder with the required input data)
 
-* Set the correct path to your data directory in cfg_datadir.py and run_test01.sh 
+* Set the correct path to your working directory in cfg_datadir.py and run_test01.sh 
 
 * simply run:
     ```shell
