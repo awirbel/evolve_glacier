@@ -29,7 +29,7 @@ from cfg_datadir import data_dir, cmaxF, TS
 import numpy as np
 from utils import (ice_mass, get_timestep, save_pvd, set_velocity, mb_change,
                     set_verticalvelocity,write_surface, solve_SNES,
-                     solve_Netwon, ice_thickness,
+                     solve_Netwon, ice_thickness, write_surface_v2,
                     set_mb, check_change, subdomains_vels)
 
 
@@ -379,7 +379,10 @@ while flag_stop < 0.5:
 
 
 #----------------- Write result to stl to create new 3D geometry START---------------------
+# for STL option (fully unstructured mesh)
 write_surface(u, s_new_bed_ini)
+## for MSH option (vertically structured mesh)
+# write_surface_v2(u, s_new_bed_ini)
 #----------------- Write result to stl create new 3D geometry START---------------------
 
 
