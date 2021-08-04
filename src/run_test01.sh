@@ -31,9 +31,10 @@ do
 
     # Generate updated 3D mesh
     res1=$(date +%s.%N)
+    # for STL option (unstructured mesh)
     gmsh-aj -3 $name_dir$"vol_mesh_domain.geo"
     dolfin-convert $name_dir$"vol_mesh_domain.msh" $name_dir$name$i2$name2
-    # or in case of option 2 
+    ## for MSH option, (vertically structured mesh)
     # dolfin-convert $name_dir$"volmesh_block.msh" $name_dir$name$i2$name2
     res2=$(date +%s.%N)
     awk "BEGIN {printf \"Mesh runtime [seconds]: %.5f\n\", $res2-$res1}"
